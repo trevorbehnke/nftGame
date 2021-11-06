@@ -17,19 +17,19 @@ const main = async () => {
   await gameContract.deployed();
   console.log("Contract deployed to:", gameContract.address);
 
-  let txn;
-  // We only have three characters.
-  // an NFT w/ the character at index 2 of our array.
-  txn = await gameContract.mintCharacterNFT(2);
-  await txn.wait();
+  // let txn;
+  // // We only have three characters.
+  // // an NFT w/ the character at index 2 of our array.
+  // txn = await gameContract.mintCharacterNFT(2);
+  // await txn.wait();
 
-  txn = await gameContract.attackBoss();
-  await txn.wait();
+  // txn = await gameContract.attackBoss();
+  // await txn.wait();
 
-  txn = await gameContract.attackBoss();
-  await txn.wait();
+  // txn = await gameContract.attackBoss();
+  // await txn.wait();
 
-  console.log("Done!");
+  // console.log("Done!");
 };
 
 const runMain = async () => {
